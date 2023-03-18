@@ -69,7 +69,7 @@ while True:
     for enemy in enemies:
         display.set_pixel(enemy[0], enemy[1], 3)
     
-    # Check if the player has reached the top of the screen
+    # Checks if the player has reached the top of the screen
     if playerY < 0:
         display.clear()
         enemies.clear()
@@ -87,7 +87,7 @@ while True:
     if isColliding():
         break
     
-    # Update tick count and elapsed time
+    # Updates tick count and elapsed time
     elapsedTick += 1
     elapsedTime = running_time()
     sleep(10)

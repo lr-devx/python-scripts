@@ -55,7 +55,7 @@ while True:
     if elapsedTime != 0 and elapsedTime + 100 < running_time():
         print("==========TICK SLOW==========")
 
-    # Moves the player to the left or right based on whether the buttons are pressed or not
+    # Moves the player to the left or right based on whether the buttons were pressed or not
     if button_a.was_pressed():
         movePlayer(-1)
     if button_b.was_pressed():

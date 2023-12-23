@@ -21,8 +21,7 @@ TEXTURES = {
 # Initialisation de toutes les textures
 def init_textures():
     """
-    Lecture de toutes les textures sur le disque et créer une nouvelle texture OpenGL pour chaque avec un ID qui correspond
-    Cette ID sera utiliser pour référencer la texture par la suite
+    Lecture de toutes les textures sur le disque et création d'une nouvelle instance de "PhotoImage"
     """
     for key in TEXTURES:
         img = Image.open(f"{WORKING_DIRECTORY}\\textures\\{key}.png")
